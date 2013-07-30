@@ -1,7 +1,7 @@
 Copyright CARES 2013
 
 Context Logger Project ::
-Logging mobile device's context & Analysis 
+Logging mobile device's context, Managing a repository & Analyzing that files! 
 
 1. Logger App : Android App for logging context
 2. Logger Repository : Repository, a host side application, for collecting logged data
