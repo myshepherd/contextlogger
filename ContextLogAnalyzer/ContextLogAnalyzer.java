@@ -74,7 +74,7 @@ public class ContextLogAnalyzer {
 		CommandLineParser parser = new PosixParser();
 		Options options = new Options();
 		options.addOption(OptionBuilder.withArgName("Output directory").hasArg().withDescription("Indicate [o]utput directory").create("o"));
-		options.addOption(OptionBuilder.withDescription("Make output using human-readable time format").create("T"));
+		options.addOption(OptionBuilder.withDescription("Make output using human-readable [T]ime format").create("T"));
 		options.addOption(OptionBuilder.withDescription("[i]nclude logger on/ogg message").create("i"));
 
 		// Parse Command
