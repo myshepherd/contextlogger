@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:checked="true"
+        android:paddingLeft="50dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/dataThd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" 
+        android:layout_toLeftOf="@id/button">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:text="@string/default_data_threshold" />
+
+        <TextView
+            android:id="@+id/dataUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/data_unit"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+</RelativeLayout>
