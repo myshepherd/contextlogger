@@ -6,24 +6,29 @@ import ac.snu.cares.contextlogger.R;
 import android.app.Service;
 import android.content.Context;
 import android.os.PowerManager;
+import android.util.Log;
 import android.widget.Toast;
 
 public abstract class Collector {
 	public boolean enabled;
-	protected Service context;
-	protected StateCollection collection;
-	private boolean isSilentMode;
+
+    protected String TAG = "Collector";
+    protected Service context;
+    protected StateCollection collection;
+
+    private boolean isSilentMode;
 
 	abstract public void enable(Service context);
     abstract public String getDBName();
 
 	abstract protected void handle();
 
-	protected void awakeHandle() {
+	protected void awakeHandle(String collectorName) {
+        String wakeLockTag = collectorName + "WakeLock";
 		PowerManager pm = (PowerManager) context
 				.getSystemService(Context.POWER_SERVICE);
 		PowerManager.WakeLock wl = pm.newWakeLock(
-				PowerManager.SCREEN_DIM_WAKE_LOCK, "My Tag");
+				PowerManager.PARTIAL_WAKE_LOCK, wakeLockTag);
 		wl.acquire();
 
 		handle();

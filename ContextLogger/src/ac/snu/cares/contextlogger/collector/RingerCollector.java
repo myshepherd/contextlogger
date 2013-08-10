@@ -12,6 +12,7 @@ import android.media.AudioManager;
 public class RingerCollector extends Collector {
 
 	private static final String DB_NAME = "ringer";
+    private static final String TAG = "RingerCollector";
 
 	private SoundState prev = null;
 	private Intent intentHandling = null;
@@ -21,7 +22,7 @@ public class RingerCollector extends Collector {
 		@Override
 		public void onReceive(Context context, Intent intent) {
 			intentHandling = intent;
-			awakeHandle();
+			awakeHandle(TAG);
 		}
 	};
 

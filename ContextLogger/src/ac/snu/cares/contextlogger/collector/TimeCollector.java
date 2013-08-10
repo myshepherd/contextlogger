@@ -18,6 +18,7 @@ public class TimeCollector extends Collector {
 	private static final String ACTION_TIME_REACHED = "ac.snu.cares.elgger.action.TIME_REACHED";
 
 	private static final String DB_NAME = "time";
+    private static final String TAG = "TimeCollector";
 
 	private PendingIntent pIntent;
 	private long trigger;
@@ -25,7 +26,7 @@ public class TimeCollector extends Collector {
 	private BroadcastReceiver receiver = new BroadcastReceiver() {
 		@Override
 		public void onReceive(Context context, Intent intent) {
-			awakeHandle();
+			awakeHandle(TAG);
 		}
 	};
 

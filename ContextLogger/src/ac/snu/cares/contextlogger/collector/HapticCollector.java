@@ -15,13 +15,14 @@ public class HapticCollector extends Collector {
 	private static final int HAPTIC_ENABLED = 1;
 
 	private static final String DB_NAME = "haptic";
+    private static final String TAG = "HapticCollector";
 
 	private EnableState prev = null;
 
 	private ContentObserver observer = new ContentObserver(new Handler()) {
 		public void onChange(boolean selfChange) {
 			super.onChange(selfChange);
-			awakeHandle();
+			awakeHandle(TAG);
 		}
 	};
 

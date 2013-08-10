@@ -5,6 +5,7 @@ import java.io.File;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 public class StateDBHelper extends SQLiteOpenHelper {
 	public final static String EVENT_ID = "id";

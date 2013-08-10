@@ -11,6 +11,7 @@ import android.net.NetworkInfo;
 
 public class NetworkStateCollector extends Collector {
     private static final String DB_NAME = "networkstate";
+    private static final String TAG = "NetworkStateCollector";
 
     private String prev;
     private Intent intentHandling = null;
@@ -19,7 +20,7 @@ public class NetworkStateCollector extends Collector {
         @Override
         public void onReceive(Context context, Intent intent) {
             intentHandling = intent;
-            awakeHandle();
+            awakeHandle(TAG);
         }
     };
 

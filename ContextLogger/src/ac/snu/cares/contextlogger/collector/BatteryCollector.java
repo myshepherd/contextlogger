@@ -8,11 +8,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.BatteryManager;
+import android.util.Log;
 
 public class BatteryCollector extends Collector {
 	private enum ChargerType {AC, USB, Unkown};
 	
 	private static final String DB_NAME = "battery";
+    private static final String TAG = "BatteryCollector";
 	
 	private ConnState prev = null;
 	private ChargerType type = null;
@@ -23,7 +25,7 @@ public class BatteryCollector extends Collector {
 		@Override
 		public void onReceive(Context context, Intent intent) {
 			intentHandling = intent;
-			awakeHandle();
+			awakeHandle(TAG);
 		}
 	};
 
@@ -67,9 +69,9 @@ public class BatteryCollector extends Collector {
 		
 		msg += "POWER " + current.name();
 		showToastMessage(msg);
-		
-		if (current != null && prev != current) {
-			collection.put(current.name());
+
+        if (current != null && prev != current) {
+        	collection.put(current.name());
 			prev = current;
 		}
 	}

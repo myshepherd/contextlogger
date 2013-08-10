@@ -18,43 +18,38 @@
     <TextView
         android:id="@+id/start_message"
         android:layout_weight="1.67"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="77dp"
         android:gravity="center"
-		android:textSize="25sp"
-        android:text="@string/app_name" />
+		android:textSize="35sp"
+        android:text="@string/app_name"
+        android:textStyle="bold"/>
 
     <ToggleButton
         android:id="@+id/toggleButton"
         android:layout_weight="0"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:onClick="onToggled"
         android:textOn="@string/button_on"
-        android:textOff="@string/button_off" />
+        android:textOff="@string/button_off"
+        android:checked="false"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_weight="1.60"
         android:layout_width="fill_parent"
-        android:layout_height="74dp" />
+        android:layout_height="53dp" />
 
     <Button
-        android:layout_weight="0"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:onClick="onClickSettingButton"
-        android:text="@string/button_settings" />
-
-    <Space
-            android:layout_width="201dp"
-            android:layout_height="32dp"
-            android:layout_gravity="center"/>
-
-    <Button
+            android:id="@+id/uploadButton"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:text="@string/button_sendlog"
-            android:onClick="onClickSendButton"/>
+            android:onClick="onClickSendButton"
+            android:textStyle="bold"
+            android:textSize="30dp"/>
 
 
 </LinearLayout>

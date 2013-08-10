@@ -11,6 +11,7 @@ import ac.snu.cares.contextlogger.database.EnableState;
 
 public class ScreenStateCollector extends Collector {
     private static final String DB_NAME = "screenstate";
+    private static final String TAG = "ScreenStateCollector";
 
     private EnableState prev;
     private Intent intentHandling = null;
@@ -19,7 +20,7 @@ public class ScreenStateCollector extends Collector {
         @Override
         public void onReceive(Context context, Intent intent) {
             intentHandling = intent;
-            awakeHandle();
+            awakeHandle(TAG);
         }
     };
 

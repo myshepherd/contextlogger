@@ -11,6 +11,7 @@ import android.content.IntentFilter;
 public class HeadsetCollector extends Collector {
 
 	private static final String DB_NAME = "headset";
+    private static final String TAG = "HeadsetCollector";
 
 	private ConnState prev = null;
 	private Intent intentHandling = null;
@@ -19,7 +20,7 @@ public class HeadsetCollector extends Collector {
 		@Override
 		public void onReceive(Context context, Intent intent) {
 			intentHandling = intent;
-			awakeHandle();
+			awakeHandle(TAG);
 		}
 	};
 

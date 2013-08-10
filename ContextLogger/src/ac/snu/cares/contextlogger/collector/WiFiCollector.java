@@ -12,6 +12,7 @@ import android.net.wifi.WifiManager;
 
 public class WiFiCollector extends Collector {
 	private static final String DB_NAME = "wifi";
+    private static final String TAG = "WiFiCollector";
 
 	private EnableState prev;
 	private Intent intentHandling = null;
@@ -20,7 +21,7 @@ public class WiFiCollector extends Collector {
 		@Override
 		public void onReceive(Context context, Intent intent) {
 			intentHandling = intent;
-			awakeHandle();
+			awakeHandle(TAG);
 		}
 	};
 

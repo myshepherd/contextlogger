@@ -12,32 +12,39 @@ import ac.snu.cares.contextlogger.collector.Collector;
 import ac.snu.cares.contextlogger.collector.DataUsageCollector;
 import ac.snu.cares.contextlogger.collector.TimeCollector;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteException;
 import android.os.Binder;
 import android.os.IBinder;
+import android.os.SystemClock;
 import android.util.Log;
 
 public class MainService extends Service {
 
 	public static enum CollectorName {
-        NETWORKSTATE	("NetworkStateCollector",	"Network State", true),
-        SCREENSTATE     ("ScreenStateCollector",	"Screen State", true),
-		WIFI_HOTSPOT	("WiFiHotspotCollector",	"Wi-Fi Hotspot", false),
-		WIFI			("WiFiCollector",			"Wi-Fi", false),
-		HOST_USB		("UsbCollector",			"Usb Connection to Host", false),
-		RINGER			("RingerCollector",		"Sound Mode", false),
-		HEADSET		("HeadsetCollector",		"Headset Coonection", true),
-		DOCK			("DockCollector",			"Dock Connection", true),
-		BLUETOOTH		("BluetoothCollector",	"Bluetooth", true),
-		BATTERY		("BatteryCollector",		"Charger Connection", true),
-		DATA_USE		("DataUsageCollector",	"Mobile Data Usage", false),
-		SYNC			("SyncCollector",			"Auto Sync", false),
-		AUTO_ROTATE	("AutoRotateCollector",	"Auto Rotate Screen", false),
-		HAPTIC			("HapticCollector",		"Vibrate on Touch", false),
-		TIME			("TimeCollector",			"Stamp Certain Time", false);
+        NETWORKSTATE	("NetworkStateCollector",	            "Network State",                true),
+        SCREENSTATE     ("ScreenStateCollector",	            "Screen State",                 true),
+		WIFI_HOTSPOT	("WiFiHotspotCollector",	            "Wi-Fi Hotspot",                false),
+		WIFI			("WiFiCollector",			            "Wi-Fi",                        false),
+		HOST_USB		("UsbCollector",			            "Usb Connection to Host",       false),
+		RINGER			("RingerCollector",	    	            "Sound Mode",                   false),
+		HEADSET		    ("HeadsetCollector",		            "Headset Coonection",           false),
+		DOCK			("DockCollector",			            "Dock Connection",              false),
+		BLUETOOTH		("BluetoothCollector",	                "Bluetooth",                    false),
+		BATTERY		    ("BatteryCollector",		            "Charger Connection",           true),
+		DATA_USE		("DataUsageCollector",	                "Mobile Data Usage",            false),
+		SYNC			("SyncCollector",			            "Auto Sync",                    true),
+		AUTO_ROTATE	    ("AutoRotateCollector",	                "Auto Rotate Screen",           false),
+		HAPTIC			("HapticCollector",		                "Vibrate on Touch",             false),
+		TIME			("TimeCollector",			            "Stamp Certain Time",           false),
+        APP_USAGE       ("AppUsageCollector",                   "App Usage",                    true),
+        PM_USAGE        ("PackageManagementLogCollector",       "Package Management Log",       true),
+        RUN_PROC_INFO   ("RunningProcInfoCollector",            "Running Process Information",  true),
+        NET_USAGE       ("MobileDataUsageCollector",            "MN/WiFI Usage",                true);
 
 		String className;
 		String label;
@@ -121,6 +128,7 @@ public class MainService extends Service {
 				collectors[idx].enable(this);
 			}
 		}
+        unregisterRestartAlarm();
 
         DBFileSender.getInstance().registerAutomaticSending(this);
 	}
@@ -133,6 +141,9 @@ public class MainService extends Service {
 			}
 		}
 		collectors = null;
+
+        registerRestartAlarm();
+        DBFileSender.getInstance().unregisterAutomaticSending(this);
 	}
 
 	public void disableCollector(String label) {
@@ -234,5 +245,25 @@ public class MainService extends Service {
 
 		return null;
 	}
+
+    void registerRestartAlarm() {
+        Intent intent = new Intent(MainService.this, RestartAlarmReceiver.class);
+        intent.setAction(RestartAlarmReceiver.ACTION_RESTART_SERVICE);
+
+        PendingIntent sender = PendingIntent.getBroadcast(MainService.this, 0, intent, 0);
+        long firstTime = SystemClock.elapsedRealtime();
+        AlarmManager am = (AlarmManager)getSystemService(ALARM_SERVICE);
+        am.setRepeating(AlarmManager.ELAPSED_REALTIME_WAKEUP, firstTime + 10 * 1000, 10 * 1000, sender);
+    }
+
+    void unregisterRestartAlarm(){
+        Intent intent = new Intent(MainService.this, RestartAlarmReceiver.class);
+        intent.setAction(RestartAlarmReceiver.ACTION_RESTART_SERVICE);
+
+        PendingIntent sender = PendingIntent.getBroadcast(MainService.this, 0, intent, 0);
+
+        AlarmManager am = (AlarmManager)getSystemService(ALARM_SERVICE);
+        am.cancel(sender);
+    }
 
 }

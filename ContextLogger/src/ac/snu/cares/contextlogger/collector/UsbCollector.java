@@ -14,6 +14,7 @@ public class UsbCollector extends Collector {
 	private static final String USB_CONNECTED = "connected";
 
 	private static final String DB_NAME = "usb";
+    private static final String TAG = "UsbCollector";
 
 	private ConnState prev = null;
 	private Intent intentHandling = null;
@@ -22,7 +23,7 @@ public class UsbCollector extends Collector {
 		@Override
 		public void onReceive(Context context, Intent intent) {
 			intentHandling = intent;
-			awakeHandle();
+			awakeHandle(TAG);
 		}
 	};
 

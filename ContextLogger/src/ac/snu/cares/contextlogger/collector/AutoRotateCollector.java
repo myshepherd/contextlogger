@@ -15,6 +15,7 @@ public class AutoRotateCollector extends Collector {
 	private static final int AUTO_ROTATE_ENABLED = 1;
 
 	private static final String DB_NAME = "auto_rotate";
+    private static final String TAG = "AutoRotateCollector";
 
 	private EnableState prev = null;
 
@@ -22,7 +23,7 @@ public class AutoRotateCollector extends Collector {
 
 		public void onChange(boolean selfChange) {
 			super.onChange(selfChange);
-			awakeHandle();
+			awakeHandle(TAG);
 		}
 	};
 

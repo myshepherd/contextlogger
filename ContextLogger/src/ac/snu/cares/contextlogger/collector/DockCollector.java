@@ -10,6 +10,7 @@ import android.content.IntentFilter;
 
 public class DockCollector extends Collector {
 	private static final String DB_NAME = "dock";
+    private static final String TAG = "DockCollector";
 
 	private ConnState prev = null;
 	private Intent intentHandling = null;
@@ -18,7 +19,7 @@ public class DockCollector extends Collector {
 		@Override
 		public void onReceive(Context context, Intent intent) {
 			intentHandling = intent;
-			awakeHandle();
+			awakeHandle(TAG);
 		}
 	};
 

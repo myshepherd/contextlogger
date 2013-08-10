@@ -11,6 +11,7 @@ import android.content.IntentFilter;
 
 public class BluetoothCollector extends Collector {
 	private static final String DB_NAME = "bluetooth";
+    private static final String TAG = "BluetoothCollector";
 
 	private EnableState prev = null;
 	private Intent intentHandling = null;
@@ -19,7 +20,7 @@ public class BluetoothCollector extends Collector {
 		@Override
 		public void onReceive(Context context, Intent intent) {
 			intentHandling = intent;
-			awakeHandle();
+			awakeHandle(TAG);
 		}
 	};
 

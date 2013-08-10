@@ -13,6 +13,7 @@ public class SyncCollector extends Collector {
 	private static final String SYNC_CONNECTION_SETTING_CHANGED = "com.android.sync.SYNC_CONN_STATUS_CHANGED";
 
 	private static final String DB_NAME = "sync";
+    private static final String TAG = "SyncCollector";
 
 	private EnableState prev;
 
@@ -20,7 +21,7 @@ public class SyncCollector extends Collector {
 
 		@Override
 		public void onReceive(Context context, Intent intent) {
-			awakeHandle();
+			awakeHandle(TAG);
 		}
 	};
 

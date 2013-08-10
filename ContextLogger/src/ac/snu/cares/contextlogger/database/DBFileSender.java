@@ -36,7 +36,7 @@ public class DBFileSender {
             "ac.snu.cares.elgger.action.TIME_REACHED_FOR_FILE";
     private static final long TOO_LONG_TIME = AlarmManager.INTERVAL_DAY * 3;
 
-    private static final String HOST_NAME = "147.46.78.119";
+    private static final String HOST_NAME = "147.46.241.65";
     private static final int PORT = 25800;
 
     private static final int BUFFER_SIZE = 8192;
@@ -51,7 +51,7 @@ public class DBFileSender {
         return mInstance;
     }
 
-    // registration for sending its db file
+     // registration for sending its db file
     public void registerAutomaticSending(Service context) {
         nLastSentTime = System.currentTimeMillis(); //init last time to current
 
@@ -90,6 +90,13 @@ public class DBFileSender {
         Log.i("CARES Context Logger", "Set triggers for sending its db file");
     }
 
+    // registration for sending its db file
+    public void unregisterAutomaticSending(Service context) {
+
+        context.unregisterReceiver(triggerByPeriodicAlarm);
+        context.unregisterReceiver(triggerByWifiState);
+    }
+
 
     // Triggers,
     private boolean bExistPendedSending = false;
@@ -126,6 +133,7 @@ public class DBFileSender {
 
     // Body for sending file
     public void sendFile(Context context, Activity toastActivity) {
+
         new SendFileTask(context, toastActivity).execute();
     }
 
@@ -152,6 +160,7 @@ public class DBFileSender {
             try {
                 s.connect(new InetSocketAddress(HOST_NAME, PORT));
                 BufferedOutputStream out = new BufferedOutputStream(s.getOutputStream());
+
                 FileInputStream in = new FileInputStream(StateDBHelper.getDBfileName(context));
 
                 byte[] buffer = new byte[BUFFER_SIZE];

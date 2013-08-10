@@ -10,6 +10,7 @@ import android.widget.Toast;
 public class DataUsageCollector extends Collector {
 
 	public static final String DB_NAME = "data_usage";
+    private static final String TAG = "DataUsageCollector";
 
 	private static long DATA_THRESHOLD; //bytes
 
@@ -21,7 +22,7 @@ public class DataUsageCollector extends Collector {
 		@Override
 		public void onDataActivity(int direction) {
 			directionHandling = direction;
-			awakeHandle();
+			awakeHandle(TAG);
 		}
 	};
 

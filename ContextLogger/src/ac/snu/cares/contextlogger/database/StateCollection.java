@@ -84,6 +84,32 @@ public class StateCollection {
 		insert(values);
 	}
 
+    public void put(long occurTime, String desc) {
+        ContentValues values = new ContentValues();
+        values.put(StateDBHelper.EVENT_DESCRIPTION, desc);
+
+        insert(occurTime, values);
+    }
+
+    public void putAll(ArrayList<String> descArrayList){
+
+        try {
+            database.beginTransaction();
+            for(int i = 0; i < descArrayList.size(); i++){
+                ContentValues descValues = new ContentValues();
+                descValues.put(StateDBHelper.EVENT_DESCRIPTION, descArrayList.get(i));
+                insert(System.currentTimeMillis(), descValues);
+            }
+            database.setTransactionSuccessful();
+        } catch(SQLiteException e){
+            ContentValues errValues = new ContentValues();
+            errValues.put(StateDBHelper.EVENT_DESCRIPTION, "TRANSACTION_ERR");
+            insert(System.currentTimeMillis(), errValues);
+        } finally {
+            database.endTransaction();
+        }
+    }
+
 	public String getLatest() {
 		String ret = null;
 		int goup = 0;
@@ -141,4 +167,16 @@ public class StateCollection {
 			newestId = insertedId;
 		}
 	}
+
+    private void insert(long occurTime, ContentValues values) {
+        values.put(StateDBHelper.OCCUR_TIME, occurTime);
+
+        long insertedId = database.insert(TABLE_NAME, null, values);
+        if (insertedId == -1) {
+            Log.e("StateCollection", "can't record the event on"
+                    + TABLE_NAME);
+        } else {
+            newestId = insertedId;
+        }
+    }
 }

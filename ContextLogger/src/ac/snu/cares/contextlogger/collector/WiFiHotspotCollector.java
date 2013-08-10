@@ -25,6 +25,7 @@ public class WiFiHotspotCollector extends Collector {
 	private static final int WIFI_AP_STATE_FAILED = 14;
 
 	private static final String DB_NAME = "wifi_hotspot";
+    private static final String TAG = "WiFiHotspotCollector";
 
 	private EnableState prev = null;
 	private Intent intentHandling = null;
@@ -33,7 +34,7 @@ public class WiFiHotspotCollector extends Collector {
 		@Override
 		public void onReceive(Context context, Intent intent) {
 			intentHandling = intent;
-			awakeHandle();
+			awakeHandle(TAG);
 		}
 	};
 
