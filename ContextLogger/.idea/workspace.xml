@@ -21,7 +21,7 @@
     </layouts>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="CARES" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="DEBUG" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f223df99-d5a2-4a94-b208-84fbd061348f" name="Default" comment="" />
@@ -41,6 +41,7 @@
   </component>
   <component name="CompilerWorkspaceConfiguration">
     <option name="USE_COMPILE_SERVER" value="false" />
+    <option name="PARALLEL_COMPILATION" value="true" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -96,55 +97,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Collector.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/collector/Collector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="17" selection-start="793" selection-end="793" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1275">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StateDBHelper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/database/StateDBHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="13" selection-start="1216" selection-end="1216" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="720">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NetworkStateCollector.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/collector/NetworkStateCollector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="22" selection-start="1355" selection-end="1355" vertical-scroll-proportion="0.0" vertical-offset="645" max-vertical-offset="1335">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MainService.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/MainService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="66" selection-start="3862" selection-end="3862" vertical-scroll-proportion="0.0" vertical-offset="1845" max-vertical-offset="3645">
+            <state line="125" column="0" selection-start="4659" selection-end="4659" vertical-scroll-proportion="0.0" vertical-offset="1860" max-vertical-offset="4110">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EnableState.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/database/EnableState.java">
+      <file leaf-file-name="RestartAlarmReceiver.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/RestartAlarmReceiver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="12" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="165">
+            <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SoundState.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/database/SoundState.java">
+      <file leaf-file-name="BootStrapper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/BootStrapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="12" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="180">
+            <state line="11" column="59" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="435">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RunningProcInfoCollector.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/collector/RunningProcInfoCollector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="137" column="5" selection-start="5548" selection-end="5548" vertical-scroll-proportion="0.0" vertical-offset="2040" max-vertical-offset="2610">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MobileDataUsageCollector.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/collector/MobileDataUsageCollector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="100" column="6" selection-start="2715" selection-end="3618" vertical-scroll-proportion="0.0" vertical-offset="1485" max-vertical-offset="3870">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppUsageCollector.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/collector/AppUsageCollector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="106" column="133" selection-start="4662" selection-end="4662" vertical-scroll-proportion="0.0" vertical-offset="1575" max-vertical-offset="3915">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DBFileSender.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/database/DBFileSender.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="86" column="63" selection-start="3228" selection-end="3228" vertical-scroll-proportion="0.3721374" vertical-offset="705" max-vertical-offset="3540">
               <folding />
             </state>
           </provider>
@@ -162,25 +172,16 @@
       <file leaf-file-name="StateCollection.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/database/StateCollection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="41" selection-start="787" selection-end="787" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="2235">
+            <state line="159" column="47" selection-start="4174" selection-end="4200" vertical-scroll-proportion="0.0" vertical-offset="2370" max-vertical-offset="2805">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBFileSender.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/database/DBFileSender.java">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="42" selection-start="1345" selection-end="1345" vertical-scroll-proportion="0.0" vertical-offset="645" max-vertical-offset="3915">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AutoRotateCollector.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/collector/AutoRotateCollector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="33" selection-start="1347" selection-end="1347" vertical-scroll-proportion="0.6060606" vertical-offset="285" max-vertical-offset="1140">
+            <state line="21" column="16" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.0" vertical-offset="474" max-vertical-offset="1050">
               <folding />
             </state>
           </provider>
@@ -193,33 +194,41 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="$PROJECT_DIR$/../../key.jks" />
+    <option name="KEY_ALIAS" value="ContextLogger" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/ac/snu/cares/elgger/collector/NetworkStateCollector.java" />
-        <option value="$PROJECT_DIR$/src/ac/snu/cares/elgger/SettingsActivity.java" />
-        <option value="$PROJECT_DIR$/src/ac/snu/cares/elgger/collector/ScreenStateCollector.java" />
-        <option value="$PROJECT_DIR$/src/ac/snu/cares/elgger/MainService.java" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/.project" />
-        <option value="$PROJECT_DIR$/src/ac/snu/cares/contextlogger/collector/TimeCollector.java" />
         <option value="$PROJECT_DIR$/src/ac/snu/cares/contextlogger/collector/Collector.java" />
-        <option value="$PROJECT_DIR$/src/ac/snu/cares/contextlogger/database/StateDBHelper.java" />
-        <option value="$PROJECT_DIR$/src/ac/snu/cares/contextlogger/SettingsActivity.java" />
-        <option value="$PROJECT_DIR$/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/src/ac/snu/cares/contextlogger/database/StateCollection.java" />
         <option value="$PROJECT_DIR$/src/ac/snu/cares/contextlogger/MainActivity.java" />
-        <option value="$PROJECT_DIR$/src/ac/snu/cares/contextlogger/database/DBFileSender.java" />
+        <option value="$PROJECT_DIR$/src/ac/snu/cares/contextlogger/collector/BatteryCollector.java" />
+        <option value="$PROJECT_DIR$/src/ac/snu/cares/contextlogger/OutsideIntentReceiver.java" />
+        <option value="$PROJECT_DIR$/src/ac/snu/cares/contextlogger/collector/DownloadManagerUsageCollector.java" />
+        <option value="$PROJECT_DIR$/src/ac/snu/cares/contextlogger/collector/PackageManagementLogCollector.java" />
+        <option value="$PROJECT_DIR$/src/ac/snu/cares/contextlogger/collector/CurrentForegroundServiceCollector.java" />
+        <option value="$PROJECT_DIR$/src/ac/snu/cares/contextlogger/database/StateCollection.java" />
+        <option value="$PROJECT_DIR$/src/ac/snu/cares/contextlogger/collector/MobileDataUsageCollector.java" />
+        <option value="$PROJECT_DIR$/src/ac/snu/cares/contextlogger/collector/AppWidgetLogCollector.java" />
+        <option value="$PROJECT_DIR$/src/ac/snu/cares/contextlogger/collector/AppUsageCollector.java" />
+        <option value="$PROJECT_DIR$/src/ac/snu/cares/contextlogger/collector/RunningProcInfoCollector.java" />
+        <option value="$PROJECT_DIR$/src/ac/snu/cares/contextlogger/RestartAlarmReceiver.java" />
         <option value="$PROJECT_DIR$/src/ac/snu/cares/contextlogger/MainService.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/ac/snu/cares/contextlogger/database/DBFileSender.java" />
       </list>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="y" value="52" />
-    <option name="width" value="1282" />
-    <option name="height" value="955" />
+    <option name="x" value="758" />
+    <option name="y" value="151" />
+    <option name="width" value="1152" />
+    <option name="height" value="720" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -247,8 +256,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -381,18 +388,27 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="ExportedApkPath" value="$PROJECT_DIR$/ContextLogger.apk" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="options.lastSelected" value="appearance" />
+    <property name="ExportedModule" value="ContextLogger" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="AndroidRunProguardForReleaseBuild" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager" selected="Android Application.ContextLogger">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
@@ -590,35 +606,62 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="52" width="1282" height="955" extended-state="6" />
+    <frame x="758" y="151" width="1152" height="720" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39978564" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42450142" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33654878" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22291407" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994652" sideWeight="0.7073955" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32763532" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19690265" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2498615" sideWeight="0.60021436" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963988" sideWeight="0.60021436" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2203252" sideWeight="0.7770859" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19090909" sideWeight="0.5754986" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994652" sideWeight="0.7073955" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.528877" sideWeight="0.6709539" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31855956" sideWeight="0.60021436" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33654878" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994652" sideWeight="0.7073955" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1501385" sideWeight="0.60021436" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31855956" sideWeight="0.60021436" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39978564" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19690265" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2498615" sideWeight="0.60021436" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -652,7 +695,7 @@
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
-    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
     <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
     <option name="LIMIT_HISTORY" value="true" />
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
@@ -681,82 +724,97 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+    <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/OutsideIntentReceiver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="96" selection-start="790" selection-end="790" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="45" selection-start="1700" selection-end="1700" vertical-scroll-proportion="0.6173285" vertical-offset="408" max-vertical-offset="975">
+        <state line="16" column="47" selection-start="436" selection-end="436" vertical-scroll-proportion="0.46332046" vertical-offset="0" max-vertical-offset="518">
           <folding>
-            <element signature="e#534#563#0" expanded="false" />
-            <element signature="e#864#882#0" expanded="false" />
-            <element signature="e#1126#1145#0" expanded="false" />
-            <element signature="e#1170#1190#0" expanded="false" />
-            <element signature="e#1532#1557#0" expanded="false" />
-            <element signature="e#1835#1859#0" expanded="false" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/BootStrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="648" selection-end="648" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="56" selection-start="1812" selection-end="1812" vertical-scroll-proportion="0.0" vertical-offset="404" max-vertical-offset="975">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/SettingsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="137" column="57" selection-start="4223" selection-end="4223" vertical-scroll-proportion="0.0" vertical-offset="1250" max-vertical-offset="5010">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/collector/TimeCollector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="20" selection-start="95" selection-end="108" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1305">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/collector/Collector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="17" selection-start="793" selection-end="793" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1185">
+        <state line="33" column="17" selection-start="946" selection-end="946" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1245">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/collector/BatteryCollector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="39" selection-start="1853" selection-end="1894" vertical-scroll-proportion="0.96938777" vertical-offset="560" max-vertical-offset="1590">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/collector/NetworkStateCollector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="22" selection-start="1355" selection-end="1355" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1185">
+        <state line="45" column="22" selection-start="1195" selection-end="1533" vertical-scroll-proportion="0.0" vertical-offset="232" max-vertical-offset="1200">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/database/EnableState.java">
+    <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/collector/ScreenStateCollector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="12" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+        <state line="44" column="22" selection-start="1377" selection-end="1387" vertical-scroll-proportion="0.18429004" vertical-offset="388" max-vertical-offset="1050">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/database/SoundState.java">
+    <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/collector/PackageManagementLogCollector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="12" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+        <state line="18" column="35" selection-start="581" selection-end="581" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1065">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/BootStrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="59" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/collector/AppUsageCollector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="133" selection-start="4662" selection-end="4662" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="3540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/collector/RunningProcInfoCollector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="137" column="5" selection-start="5548" selection-end="5548" vertical-scroll-proportion="0.0" vertical-offset="1440" max-vertical-offset="2295">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/RestartAlarmReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/MainService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="125" column="0" selection-start="4659" selection-end="4659" vertical-scroll-proportion="0.0" vertical-offset="1860" max-vertical-offset="4110">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="16" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.0" vertical-offset="474" max-vertical-offset="1050">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/collector/MobileDataUsageCollector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="6" selection-start="2715" selection-end="3618" vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="3480">
           <folding />
         </state>
       </provider>
@@ -770,35 +828,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/database/StateCollection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="41" selection-start="787" selection-end="787" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2115">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/database/StateDBHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="13" selection-start="1216" selection-end="1216" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/MainService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="66" selection-start="3862" selection-end="3862" vertical-scroll-proportion="0.0" vertical-offset="1215" max-vertical-offset="3375">
+        <state line="159" column="47" selection-start="4174" selection-end="4200" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2685">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/database/DBFileSender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="42" selection-start="1345" selection-end="1345" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3405">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ac/snu/cares/contextlogger/collector/AutoRotateCollector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="33" selection-start="1347" selection-end="1347" vertical-scroll-proportion="0.6060606" vertical-offset="285" max-vertical-offset="1140">
+        <state line="86" column="63" selection-start="3228" selection-end="3228" vertical-scroll-proportion="0.3721374" vertical-offset="705" max-vertical-offset="3540">
           <folding />
         </state>
       </provider>
